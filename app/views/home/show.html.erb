@@ -1,0 +1,32 @@
+<h1>SHOW LINK</h1>
+
+
+
+<table class="table table-striped table-responsive">
+
+
+<tbody>
+  <tr>
+    <td><h2>Engineer:</h2></td>
+    <td><h2> <%= @short_link.engineer.firstname %> <%= @short_link.engineer.lastname %></h2></td>
+  </tr>  
+
+  <tr>
+    <td><h2>Original Link:</h2></td>
+    <td><h2><%= @short_link.url %></h2></td>    
+  </tr>    
+
+  <tr>
+    <td><h2>Short Link:</h2></td>
+    <td><h2> http://localhost:3000/<%= @short_link.unique_key %></h2></td>
+  </tr>
+
+  </tbody>
+</table>
+
+
+
+
+<p><%= link_to "another link for "+@short_link.engineer.firstname+" "+@short_link.engineer.lastname, select_home_path(@short_link.engineer_id), method: :put %></p>
+
+<p><%= link_to "another link for New Engineer", root_path %></p>
