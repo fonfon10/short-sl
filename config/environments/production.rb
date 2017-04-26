@@ -85,7 +85,7 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #default url options
-  config.action_mailer.default_url_options = { host: 'short-sl.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'sl-shortener.herokuapp.com' }
 
   #smtp settings
   config.action_mailer.delivery_method = :smtp
