@@ -9,6 +9,12 @@
       <% if current_user.present? %>
 
         <li>
+        <%= link_to root_path do %>
+            <i class="glyphicon glyphicon-plus"></i>New Link
+        <% end %>
+        </li>
+
+        <li>
         <%= link_to dashboard_show_path do %>
             <i class="glyphicon glyphicon-dashboard "></i>Dashboard
         <% end %>

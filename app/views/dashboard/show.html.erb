@@ -10,6 +10,7 @@
   <thead>
     <tr>
       <th>URL</th>
+      <th>Unique Key</th>
       <th>times accessed</th>
       <th>last accessed</th>
       <th>First Name</th>
@@ -26,6 +27,7 @@
         
 
         <td><%= links.url %></td>
+        <td><%= links.unique_key %></td>
 
         <td><%= links.use_count %></td>
         <% if links.use_count > 0 %>
@@ -52,6 +54,7 @@
           <% else %>
             <td></td>
       <% end %>
+
 
     
 
